@@ -1,12 +1,16 @@
 // enable environment vars
-require('dotenv').config();
+import { config } from 'dotenv';
+config();
+
+import Debug from 'debug';
+const debug = Debug('app');
 
 import Bot from './bot/bot';
 
 const bot = new Bot();
 try {
     bot.start();
-    console.log('Bot started.');
+    debug('Bot started.');
 } catch (e) {
-    console.error('Failed to start: ' + e);
+    debug('Failed to start: ' + e);
 }
