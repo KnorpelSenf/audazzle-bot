@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "dependencies": {
         "axios": "^0.19.0",
+        "disconnect": "^1.2.1",
         "dotenv": "latest",
         "runtypes": "^4.0.0"
     },
